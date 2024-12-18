@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <a href="template.html">Template</a> -->
+    <div id="left-container">
+        <h1>Mitsu</h1>
+        <div>
+            <span>#</span>
+            <a href="create_project.html"><span class="projects">Create Project</span></a>
+        </div>
+        <div><span>#</span><span class="project-title">Projects</span></div>
+        <div>
+            <div><span class="hashtag">#</span><span class="projects">All</span></div>
+            <div><span class="hashtag">#</span><span class="projects">Groceries</span></div>
+            <div><span class="hashtag">#</span><span class="projects">Fitness</span></div>
+        </div>
+    </div>
+    <div id="right-container">
+        <p class="project-title"><b>All Tasks</b></p>
+        <ul>
+            <li> 
+                <div class="left-task">
+                    <div class="checkbox">
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Do 30 min Yoga <span class="priority">Low Priority</span></label>
+                    </div>
+                    <div class="due">
+                        Due Tomorrow 5M
+                    </div>
+                </div>
+                <div class="right-task">
+                    # Fitness
+                </div>
+            </li>
+            <li> 
+                <div class="left-task">
+                    <div class="checkbox">
+                        <input type="checkbox" id="dentist" name="dentist" checked />
+                        <label for="dentist">Dentist appointment <span class="priority">High Priority</span></label>
+                    </div>
+                    <div class="due">
+                        Due Today 2PM
+                    </div>
+                </div>
+                <div class="right-task">
+                    # Appointments
+                </div>
+            </li>
+            <li> 
+                <div class="left-task">
+                    <div class="checkbox">
+                        <input type="checkbox" id="bread" name="bread" checked />
+                        <label for="bread">Buy Bread<span class="priority">Medium Priority</span></label>
+                    </div>
+                    <div class="due">
+                        Due Next Thursday 11PM
+                    </div>
+                </div>
+                <div class="right-task">
+                    # Groceries
+                </div>
+            </li>
+        </ul>
+        <div id="add-task">
+            <a href="add_task.html"><span>+ Add task</span></a>
+        </div>
+    </div>
+</body>
+</html>
