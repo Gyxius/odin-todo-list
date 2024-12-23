@@ -13,20 +13,21 @@
     <div id="header">
         <h1>Mitsu</h1>
     </div>
-    <div id="main-body">
+    <form id="main-body" onsubmit="return false;">
         <div><span id="project-title">New Tasks</span></div>
-        <div><span class="projects">Task Title</span></div>
-        <input type="text">
-        <div><span class="projects">Task Description</span></div>
-        <input type="text">
-        <div><span class="projects">Task dueDate</span></div>
-        <input type="text">
-        <div><span class="projects">Task Priority</span></div>
-        <input type="text">
-        <div><span class="projects">Project Name</span></div>
-        <input type="text">
-        <button>Create</button>
-    </div>
-    </div>
+        <label for="title" class="projects">Task Title</label>
+        <input type="text" id="title" name="title">
+        <label for="description" class="projects">Task Description</label>
+        <input type="text" id="description" name="description" >
+        <label for="dueDate" class="projects">Task dueDate</label>
+        <input type="text" id="dueDate" name="dueDate" >
+        <label for="priority" class="projects">Task Priority</label>
+        <input type="text" id="priority" name="priority" >
+        <label for="projectName" class="projects">Project Name</label>
+        <select name="projectName" id="projectName">
+            <!-- <option value="volvo">Volvo</option> -->
+        </select>
+        <button id="create-button">Create</button>
+    </form>
 </body>
 </html>

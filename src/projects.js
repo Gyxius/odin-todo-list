@@ -6,7 +6,8 @@
 // 1. creates a create projet function
 function createProject (projectName) {
     const name =  projectName;
-    return { name };
+    const tasks = [];
+    return { name, tasks };
 }
 // const project1 = createProject('Project 1')
 

@@ -48,7 +48,7 @@ button
   font-size: xx-small;
 }
 
-input 
+input, select 
 {
   background-color: #ECE8E8;
   border-radius: 7px;
@@ -57,3 +57,4 @@ input
   height: 20px;
   width: 200px;
 }
+
