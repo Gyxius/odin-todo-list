@@ -22,10 +22,13 @@
         <label for="dueDate" class="projects">Task dueDate</label>
         <input type="text" id="dueDate" name="dueDate" >
         <label for="priority" class="projects">Task Priority</label>
-        <input type="text" id="priority" name="priority" >
+        <select name="priority" id="priority">
+            <option value="Low Priority">Low Priority</option>
+            <option value="Medium Priority">Medium Priority</option>
+            <option value="High Priority">High Priority</option>
+        </select>
         <label for="projectName" class="projects">Project Name</label>
         <select name="projectName" id="projectName">
-            <!-- <option value="volvo">Volvo</option> -->
         </select>
         <button id="create-button">Create</button>
     </form>

@@ -33,7 +33,7 @@ function Projects() {
 
 const projects = new Projects();
 projects.viewAllProjects();
-projects.addNewProject("Jean");
+// projects.addNewProject("Jean");
 
 // // 3. Stores all the projects as json
 if (localStorage.getItem("projects") === null) {
@@ -44,4 +44,6 @@ else {
     projects.allProjects = JSON.parse(localStorage.getItem("projects"));
 }
 
+// to remove
+// localStorage.removeItem("projects");
 export default projects;
