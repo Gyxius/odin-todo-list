@@ -6,7 +6,7 @@ function createTask (taskName, description = "", dueDate = "", priority = "", pr
         description,
         dueDate,
         priority,
-        projectName,
+        projectName
     };
 }
 // const task1 = createTask('Task 1');
