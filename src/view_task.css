@@ -58,3 +58,8 @@ input
   width: 200px;
   text-align:center;
 }
+
+.editable-input {
+  /* class of the input when it's editable */
+  background-color: lightskyblue;
+}

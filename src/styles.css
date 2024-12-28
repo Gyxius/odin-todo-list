@@ -117,7 +117,7 @@ input[type=checkbox]
   display: inline;
 }
 
-#add-task
+.add-task
 {
   margin-left: 72px;
 }
