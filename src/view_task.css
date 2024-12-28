@@ -13,7 +13,7 @@ body
   margin-bottom: 50px;
 }
 
-#project-title 
+#task-title 
 {
   font-weight: bold;
   font-size: 25px;
@@ -56,4 +56,5 @@ input
   border: none;
   height: 20px;
   width: 200px;
+  text-align:center;
 }

@@ -2,6 +2,7 @@ import "./styles.css";
 import projects from "./projects.js";
 
 
+
 function displayProjectName() {
     // purpose: list the projects names on the left section of the homepage
     projects.allProjects.forEach((project) => {
@@ -9,6 +10,27 @@ function displayProjectName() {
         div.innerHTML = `<span class="hashtag">#</span><span class="projects" data-project=${project.name} >${project.name}</span>`;
         allProjects.appendChild(div);
     });
+}
+
+function displayAllTasks(taskContainer) {
+    projects.allProjects.forEach((project) => {
+        project.tasks.forEach((task) => {
+            // put the tasks on the right
+            let li = document.createElement("li");
+            li.innerHTML = printTask(task);
+            taskContainer.appendChild(li);
+        });
+    });   
+}
+
+function displayDefaultTask() {
+    let currentProjectName = "All"
+    let taskContainer = document.getElementById('task-container'); 
+    let rightContainerProjectName = document.getElementById('right-container-project-name'); 
+    rightContainerProjectName.innerText = currentProjectName;
+    taskContainer.innerHTML = '';
+    rightContainerProjectName.innerText = "All Tasks";
+    displayAllTasks(taskContainer);  
 }
 
 function printTask(task) {
@@ -64,20 +86,16 @@ function displayTasks() {
             }
             else {
                 rightContainerProjectName.innerText = "All Tasks";
-                projects.allProjects.forEach((project) => {
-                    project.tasks.forEach((task) => {
-                        // put the tasks on the right
-                        let li = document.createElement("li");
-                        li.innerHTML = printTask(task);
-                        taskContainer.appendChild(li);
-                    });
-                });
-
+                displayAllTasks(taskContainer);  
             }
         }
     })
 }
 
+
 let allProjects = document.getElementById("all-projects");
 displayProjectName();
+displayDefaultTask()
 displayTasks()
+
+
